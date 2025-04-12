@@ -41,15 +41,20 @@
 <div class="bg-base-300/70 grid h-full w-full grid-rows-[auto_1fr_auto] gap-2 p-4">
   <div class="flex flex-wrap items-center justify-between">
     <div class="flex flex-wrap items-center gap-5">
-      <p class="text-accent-content text-4xl font-bold">${gameState.current?.balance}</p>
-      <p class="text-accent-content/50 text-4xl font-semibold">${moneyPerSecond.current}/sec</p>
+      <p class="text-accent-content text-4xl font-bold">
+        ${gameState.current?.balance.toLocaleString()}
+      </p>
+      <p class="text-accent-content/50 text-4xl font-semibold">
+        ${moneyPerSecond.current.toLocaleString()}/<Bunny size={30} />/sec
+      </p>
     </div>
     <div class="flex flex-wrap items-center">
       <Button
         onclick={() => {
           goto("/");
-        }}><MingcuteBack2Fill /></Button
-      >
+        }}
+        ><MingcuteBack2Fill />
+      </Button>
     </div>
   </div>
   <div class="bg-base-100 rounded-box card overflow-hidden">
@@ -61,10 +66,11 @@
         type="accent"
         onclick={() => {
           shop?.show();
-        }}><MingcuteShoppingCart1Fill /> Shop</Button
-      >
+        }}
+        ><MingcuteShoppingCart1Fill /> Shop
+      </Button>
     </div>
-    <div class="flex flex-wrap items-center gap-4 overflow-auto">
+    <div class="flex flex-wrap items-center gap-5 overflow-auto">
       <span class="text-accent-content flex items-center gap-1 text-3xl font-semibold">
         <div class="drop-shadow-sm">
           <Bunny size={40} />
