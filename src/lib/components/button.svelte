@@ -7,7 +7,7 @@
     disabled,
     held,
     size = "normal",
-    color = "blue",
+    type = "primary",
     label,
   }: {
     children: Snippet;
@@ -15,7 +15,7 @@
     disabled?: boolean;
     held?: boolean;
     size?: "normal" | "small";
-    color?: "blue" | "red" | "green" | "neutral";
+    type?: "primary" | "secondary" | "accent" | "neutral";
     label?: string;
   } = $props();
 </script>
@@ -36,13 +36,13 @@
   <span role="presentation" class="opacity-0">{@render children?.()}</span>
   <div
     class={{
-      "absolute bottom-0 left-0 w-full rounded-lg ": true,
+      "absolute bottom-0 left-0 w-full rounded-lg brightness-90": true,
       "h-10": size === "normal",
       "h-6": size === "small",
-      "bg-blue-600": color === "blue",
-      "bg-green-600": color === "green",
-      "bg-red-600": color === "red",
-      "bg-gray-500": color === "neutral",
+      "bg-primary text-primary-content": type === "primary",
+      "bg-secondary text-secondary-content": type === "secondary",
+      "bg-accent text-accent-content": type === "accent",
+      "bg-neutral text-neutral-content": type === "neutral",
     }}
   ></div>
   <div
@@ -51,10 +51,10 @@
       "top-0.5": held,
       "h-10": size === "normal",
       "h-6": size === "small",
-      "bg-blue-500": color === "blue",
-      "bg-green-500": color === "green",
-      "bg-red-500": color === "red",
-      "bg-gray-400": color === "neutral",
+      "bg-primary text-primary-content": type === "primary",
+      "bg-secondary text-secondary-content": type === "secondary",
+      "bg-accent text-accent-content": type === "accent",
+      "bg-neutral text-neutral-content": type === "neutral",
     }}
   >
     {@render children?.()}
