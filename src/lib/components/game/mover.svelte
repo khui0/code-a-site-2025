@@ -33,6 +33,8 @@
       back = false;
     }
 
+    position = Math.min(Math.max(0, position), 100);
+
     requestAnimationFrame(update);
   }
 </script>
