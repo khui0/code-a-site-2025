@@ -41,6 +41,7 @@
       <li>Each grass increases the rate by $1</li>
       <li>Each flower increases the rate by $5</li>
       <li>Each tree increases the rate by 10%</li>
+      <li>Get rich</li>
     </ol>
   </article>
 </div>
