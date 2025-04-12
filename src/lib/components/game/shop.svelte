@@ -24,7 +24,7 @@
 </script>
 
 <dialog class="modal" bind:this={modal}>
-  <div class="modal-box flex flex-col items-center gap-2">
+  <div class="modal-box max-w-xl flex flex-col items-center gap-2">
     <span class="bubbles text-accent idle relative text-6xl">
       <h3 class="absolute top-1.5 left-0 z-[-1] brightness-90">Shop</h3>
       <h3 class="">Shop</h3>
