@@ -3,7 +3,9 @@
   import Button from "$lib/components/button.svelte";
 </script>
 
-<div class="flex h-full w-full flex-col items-center justify-center gap-10 text-center">
+<div
+  class="flex h-full w-full flex-col items-center justify-center gap-10 overflow-hidden text-center"
+>
   <span class="bubbles text-accent idle relative text-8xl">
     <h1 class="absolute top-2 left-0 z-[-1] brightness-90">Bunny Simulator</h1>
     <h1 class="">Bunny Simulator</h1>

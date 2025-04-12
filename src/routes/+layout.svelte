@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-  <title>Egg Hunt</title>
+  <title>Bunny Simulator</title>
 </svelte:head>
 
 {@render children()}
