@@ -1,7 +1,5 @@
 <script lang="ts">
-  import { invalidateAll } from "$app/navigation";
   import Bunny from "$lib/components/game/bunny.svelte";
-  import Egg from "$lib/components/game/egg.svelte";
   import Flower from "$lib/components/game/flower.svelte";
   import Grass from "$lib/components/game/grass.svelte";
   import Mover from "$lib/components/game/mover.svelte";

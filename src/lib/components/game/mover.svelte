@@ -11,7 +11,7 @@
     bottom: string;
   } = $props();
 
-  let position: number = $state(i * 20);
+  let position: number = $state((i * 20) % 100);
 
   let back: boolean = $state(false);
 
