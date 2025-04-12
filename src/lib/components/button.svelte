@@ -33,7 +33,7 @@
   {disabled}
   aria-label={label}
 >
-  <span role="presentation" class="opacity-0">{@render children?.()}</span>
+  <span role="presentation" class="inline-flex gap-2 opacity-0">{@render children?.()}</span>
   <div
     class={{
       "rounded-field absolute bottom-0 left-0 w-full brightness-90": true,
@@ -57,6 +57,6 @@
       "bg-neutral text-neutral-content": type === "neutral",
     }}
   >
-    {@render children?.()}
+    <span class="inline-flex gap-2">{@render children?.()}</span>
   </div>
 </button>

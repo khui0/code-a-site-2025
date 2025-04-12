@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui" {
   themes: pastel --default;
+  exclude: rootscrollgutter, rootcolor;
 }
 
 @layer base {

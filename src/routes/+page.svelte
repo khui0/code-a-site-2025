@@ -1,6 +1,7 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
   import Button from "$lib/components/button.svelte";
+  import { gameState, newGame } from "$lib/components/state";
 </script>
 
 <div
@@ -10,12 +11,25 @@
     <h1 class="absolute top-2 left-0 z-[-1] brightness-90">Bunny Simulator</h1>
     <h1 class="">Bunny Simulator</h1>
   </span>
-  <Button
-    type="accent"
-    onclick={() => {
-      goto("play");
-    }}>New Game</Button
-  >
+  <div class="flex flex-col items-center gap-2">
+    {#if $gameState !== null}
+      <Button
+        type="accent"
+        onclick={() => {
+          goto("play");
+        }}
+        >Continue
+      </Button>
+    {/if}
+    <Button
+      type={$gameState === null ? "accent" : "neutral"}
+      onclick={() => {
+        newGame();
+        goto("play");
+      }}
+      >New Game
+    </Button>
+  </div>
   <div>
     <p class="text-base-content/50 text-lg font-medium">By Kenny Hui</p>
     <p><a class="text-accent-content font-bold" href="https://kennyhui.dev/">kennyhui.dev</a></p>
