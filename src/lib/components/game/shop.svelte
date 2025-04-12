@@ -17,14 +17,14 @@
     modal?.close();
   };
 
-  let grassPrice: number = $derived(10 * 1.25 ** (gameState.current?.grass || 0));
-  let flowerPrice: number = $derived(50 * 1.25 ** (gameState.current?.flower || 0));
-  let treePrice: number = $derived(100 * 1.25 ** (gameState.current?.tree || 0));
+  let grassPrice: number = $derived(10 * 1.24 ** (gameState.current?.grass || 0));
+  let flowerPrice: number = $derived(50 * 1.24 ** (gameState.current?.flower || 0));
+  let treePrice: number = $derived(100 * 1.24 ** (gameState.current?.tree || 0));
   let bunnyPrice: number = $derived(1000 * 2 ** ((gameState.current?.bunny || 1) - 1));
 </script>
 
 <dialog class="modal" bind:this={modal}>
-  <div class="modal-box max-w-xl flex flex-col items-center gap-2">
+  <div class="modal-box flex max-w-xl flex-col items-center gap-2">
     <span class="bubbles text-accent idle relative text-6xl">
       <h3 class="absolute top-1.5 left-0 z-[-1] brightness-90">Shop</h3>
       <h3 class="">Shop</h3>
