@@ -6,7 +6,12 @@
   import Grass from "$lib/components/game/grass.svelte";
   import Shop from "$lib/components/game/shop.svelte";
   import Tree from "$lib/components/game/tree.svelte";
-  import { calculateRate, gameState, moneyPerSecond } from "$lib/components/state.svelte";
+  import {
+    calculateRate,
+    gameState,
+    gameTickInterval,
+    moneyPerSecond,
+  } from "$lib/components/state.svelte";
   import { onMount } from "svelte";
   import MingcuteBack2Fill from "~icons/mingcute/back-2-fill";
   import MingcuteShoppingCart1Fill from "~icons/mingcute/shopping-cart-1-fill";
@@ -16,7 +21,8 @@
   let shop: Shop | null = $state(null);
 
   onMount(() => {
-    setInterval(() => {
+    clearInterval(gameTickInterval.current);
+    gameTickInterval.current = setInterval(() => {
       if (gameState.current === null) return;
       gameState.current.balance += gameState.current.bunny * moneyPerSecond.current;
     }, 1000);

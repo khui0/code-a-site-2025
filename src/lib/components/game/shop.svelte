@@ -28,19 +28,19 @@
       <li
         class={{
           "rounded-box bg-base-200 flex w-full items-center gap-1 p-3": true,
-          "pointer-events-none opacity-50": (gameState.current?.balance || 0) < 100,
+          "pointer-events-none opacity-50": (gameState.current?.balance || 0) < 10,
         }}
       >
         <Grass size={40} />
         <p class="text-accent-content text-3xl font-semibold">{gameState.current?.grass}</p>
         <div class="flex flex-1 items-center justify-end gap-2">
-          <p class="text-primary-content text-3xl font-semibold">$100</p>
+          <p class="text-primary-content text-3xl font-semibold">$10</p>
           <Button
             type="accent"
             onclick={() => {
               if (gameState.current === null) return;
-              if (gameState.current.balance >= 100) {
-                gameState.current.balance -= 100;
+              if (gameState.current.balance >= 10) {
+                gameState.current.balance -= 10;
                 gameState.current.grass++;
               }
             }}
@@ -52,7 +52,7 @@
       <li
         class={{
           "rounded-box bg-base-200 flex w-full items-center gap-1 p-3": true,
-          "pointer-events-none opacity-50": (gameState.current?.balance || 0) < 100,
+          "pointer-events-none opacity-50": (gameState.current?.balance || 0) < 250,
         }}
       >
         <Flower size={40} />
