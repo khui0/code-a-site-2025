@@ -1,5 +1,7 @@
 # Bunny Simulator
 
+Created for SBU Web Development's Code-A-Site Spring 2025.
+
 Install dependencies
 
 ```bash
