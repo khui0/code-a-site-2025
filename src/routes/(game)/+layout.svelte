@@ -14,7 +14,7 @@
       <Button>Quit</Button>
     </div>
   </div>
-  <div class="bg-base-100 rounded-box card">
+  <div class="bg-base-100 rounded-box card overflow-hidden">
     {@render children()}
   </div>
   <div class="flex flex-wrap items-center justify-between">

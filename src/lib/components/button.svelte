@@ -22,7 +22,7 @@
 
 <button
   class={{
-    "group relative flex-shrink-0 touch-manipulation rounded-lg font-semibold text-white": true,
+    "group rounded-field relative flex-shrink-0 touch-manipulation font-semibold text-white": true,
     "pointer-events-none opacity-50": disabled,
     "h-12 px-4 text-xl": size === "normal",
     "h-8 px-3 text-base": size === "small",
@@ -36,7 +36,7 @@
   <span role="presentation" class="opacity-0">{@render children?.()}</span>
   <div
     class={{
-      "absolute bottom-0 left-0 w-full rounded-lg brightness-90": true,
+      "rounded-field absolute bottom-0 left-0 w-full brightness-90": true,
       "h-10": size === "normal",
       "h-6": size === "small",
       "bg-primary text-primary-content": type === "primary",
@@ -47,7 +47,7 @@
   ></div>
   <div
     class={{
-      "absolute top-0 left-0 flex w-full items-center justify-center rounded-lg transition-[top] group-hover:top-0.5 group-active:top-1": true,
+      "rounded-field absolute top-0 left-0 flex w-full items-center justify-center transition-[top] group-hover:top-0.5 group-active:top-1": true,
       "top-0.5": held,
       "h-10": size === "normal",
       "h-6": size === "small",
