@@ -1,7 +1,7 @@
 <script lang="ts">
   let {
     onclick,
-    size = 100,
+    size = 200,
   }: {
     onclick?: (e: MouseEvent) => void;
     size?: number;
@@ -11,14 +11,10 @@
 <button
   class="shrink-0"
   style="width: {size}px; height: {size}px;"
-  aria-label="flower"
+  aria-label="tree"
   onclick={(e) => {
     onclick?.(e);
   }}
 >
-  <enhanced:img
-    src="$lib/assets/flower.svg"
-    alt="flower"
-    style="width: {size}px; height: {size}px;"
-  />
+  <enhanced:img src="$lib/assets/tree.svg" alt="tree" style="width: {size}px; height: {size}px;" />
 </button>

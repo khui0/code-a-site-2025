@@ -9,6 +9,8 @@
 </script>
 
 <button
+  class="shrink-0"
+  style="width: {size}px; height: {size}px;"
   aria-label="grass"
   onclick={(e) => {
     onclick?.(e);
