@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class="flex h-full w-full flex-col items-center justify-center gap-10 overflow-hidden text-center"
+  class="flex min-h-full w-full flex-col items-center justify-center gap-10 overflow-hidden text-center p-10"
 >
   <span class="bubbles text-accent idle relative text-8xl">
     <h1 class="absolute top-2 left-0 z-[-1] brightness-90">Bunny Simulator</h1>
@@ -51,6 +51,17 @@
       <li>Get rich</li>
     </ol>
   </article>
+  <div>
+    <p class="text-base-content/50 text-lg font-medium">Created for Code-A-Site Spring 2025</p>
+    <p>
+      <a
+        class="text-accent-content font-bold"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/khui0/code-a-site-2025">Source</a
+      >
+    </p>
+  </div>
 </div>
 
 <style>
