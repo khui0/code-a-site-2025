@@ -20,7 +20,7 @@
   let grassPrice: number = $derived(10 * 1.25 ** (gameState.current?.grass || 0));
   let flowerPrice: number = $derived(50 * 1.25 ** (gameState.current?.flower || 0));
   let treePrice: number = $derived(100 * 1.25 ** (gameState.current?.tree || 0));
-  let bunnyPrice: number = $derived(1000 * 1.5 ** ((gameState.current?.bunny || 1) - 1));
+  let bunnyPrice: number = $derived(1000 * 2 ** ((gameState.current?.bunny || 1) - 1));
 </script>
 
 <dialog class="modal" bind:this={modal}>
