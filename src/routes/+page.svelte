@@ -16,7 +16,7 @@
       <Button
         type="accent"
         onclick={() => {
-          goto("play");
+          goto("/play");
         }}
         >Continue
       </Button>
@@ -25,7 +25,7 @@
       type={gameState === null ? "accent" : "neutral"}
       onclick={() => {
         newGame();
-        goto("play");
+        goto("/play");
       }}
       >New Game
     </Button>
@@ -34,6 +34,15 @@
     <p class="text-base-content/50 text-lg font-medium">By Kenny Hui</p>
     <p><a class="text-accent-content font-bold" href="https://kennyhui.dev/">kennyhui.dev</a></p>
   </div>
+  <article>
+    <h2 class="bubbles text-3xl text-accent-content">How to play:</h2>
+    <ol class="bg-base-200 rounded-box p-4">
+      <li>Each bunny produces $1/second by default</li>
+      <li>Each grass increases the rate by $1</li>
+      <li>Each flower increases the rate by $5</li>
+      <li>Each tree increases the rate by 10%</li>
+    </ol>
+  </article>
 </div>
 
 <style>
