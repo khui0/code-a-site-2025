@@ -1,7 +1,7 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
   import Button from "$lib/components/button.svelte";
-  import { gameState, newGame } from "$lib/components/state";
+  import { gameState, newGame } from "$lib/components/state.svelte";
 </script>
 
 <div
@@ -12,7 +12,7 @@
     <h1 class="">Bunny Simulator</h1>
   </span>
   <div class="flex flex-col items-center gap-2">
-    {#if $gameState !== null}
+    {#if gameState !== null}
       <Button
         type="accent"
         onclick={() => {
@@ -22,7 +22,7 @@
       </Button>
     {/if}
     <Button
-      type={$gameState === null ? "accent" : "neutral"}
+      type={gameState === null ? "accent" : "neutral"}
       onclick={() => {
         newGame();
         goto("play");
