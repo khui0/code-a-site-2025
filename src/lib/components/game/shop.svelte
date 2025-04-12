@@ -79,7 +79,7 @@
           "pointer-events-none opacity-50": (gameState.current?.balance || 0) < 500,
         }}
       >
-        <Grass size={40} />
+        <Tree size={40} />
         <p class="text-accent-content text-3xl font-semibold">{gameState.current?.tree}</p>
         <div class="flex flex-1 items-center justify-end gap-2">
           <p class="text-primary-content text-3xl font-semibold">$500</p>
