@@ -42,10 +42,16 @@
   <div class="flex flex-wrap items-center justify-between">
     <div class="flex flex-wrap items-center gap-5">
       <p class="text-accent-content text-4xl font-bold">
-        ${gameState.current?.balance.toLocaleString()}
+        {gameState.current?.balance.toLocaleString("en-US", {
+          style: "currency",
+          currency: "USD",
+        })}
       </p>
       <p class="text-accent-content/50 text-4xl font-semibold">
-        ${moneyPerSecond.current.toLocaleString()}/<Bunny size={30} />/sec
+        {moneyPerSecond.current.toLocaleString("en-US", {
+          style: "currency",
+          currency: "USD",
+        })}/<Bunny size={30} />/sec
       </p>
     </div>
     <div class="flex flex-wrap items-center">
