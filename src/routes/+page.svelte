@@ -32,10 +32,17 @@
   </div>
   <div>
     <p class="text-base-content/50 text-lg font-medium">By Kenny Hui</p>
-    <p><a class="text-accent-content font-bold" href="https://kennyhui.dev/">kennyhui.dev</a></p>
+    <p>
+      <a
+        class="text-accent-content font-bold"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://kennyhui.dev/">kennyhui.dev</a
+      >
+    </p>
   </div>
   <article>
-    <h2 class="bubbles text-3xl text-accent-content">How to play:</h2>
+    <h2 class="bubbles text-accent-content text-3xl">How to play:</h2>
     <ol class="bg-base-200 rounded-box p-4">
       <li>Each bunny produces $1/second by default</li>
       <li>Each grass increases the rate by $1</li>
