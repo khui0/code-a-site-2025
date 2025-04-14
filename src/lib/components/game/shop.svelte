@@ -17,9 +17,9 @@
     modal?.close();
   };
 
-  let grassPrice: number = $derived(10 * 1.24 ** (gameState.current?.grass || 0));
-  let flowerPrice: number = $derived(50 * 1.24 ** (gameState.current?.flower || 0));
-  let treePrice: number = $derived(100 * 1.24 ** (gameState.current?.tree || 0));
+  let grassPrice: number = $derived(10 * 1.2 ** (gameState.current?.grass || 0));
+  let flowerPrice: number = $derived(50 * 1.2 ** (gameState.current?.flower || 0));
+  let treePrice: number = $derived(100 * 1.23 ** (gameState.current?.tree || 0));
   let bunnyPrice: number = $derived(1000 * 2 ** ((gameState.current?.bunny || 1) - 1));
 </script>
 
